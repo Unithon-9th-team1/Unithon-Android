@@ -31,7 +31,6 @@ object Version {
 
     object DI {
         const val hilt = "2.38.1"
-        const val hiltCompose = "1.0.0"
     }
 
     object Network {

@@ -37,7 +37,6 @@ object Dependency {
         const val hiltAndroid = "com.google.dagger:hilt-android:${Version.DI.hilt}"
         const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Version.DI.hilt}"
         const val inject = "javax.inject:javax.inject:1"
-        const val hiltCompose = "androidx.hilt:hilt-navigation-compose:${Version.DI.hiltCompose}"
     }
 
     object Network {
