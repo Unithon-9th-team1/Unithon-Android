@@ -10,6 +10,15 @@
         android:background="@color/dark_gray"
         >
 
+        <include
+            android:id="@+id/top_bar"
+            layout="@layout/include_top_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/tv_name2"
             style="@style/Widget.Primary.TextView"
@@ -56,10 +65,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="10dp"
             android:text="ROCKET"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/top_bar" />
 
         <EditText
             android:id="@+id/et_code"

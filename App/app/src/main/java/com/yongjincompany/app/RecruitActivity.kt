@@ -20,10 +20,10 @@ class RecruitActivity : BaseActivity<ActivityRecruitBinding>(
     }
 
     override fun initClickListener() {
-     binding.tcRecruit.setOnClickListener {
-         val intent = Intent(this@RecruitActivity , MakeRocketActivity::class.java)
-         startActivity(intent)
-         finish()
-     }
+        binding.tcRecruit.setOnClickListener {
+            val intent = Intent(this@RecruitActivity, MakeRocketActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
