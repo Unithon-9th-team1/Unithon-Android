@@ -107,6 +107,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view4" />
 
         <TextView
+            android:id="@+id/textView11"
             style="@style/Widget.Primary.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,6 +116,28 @@
             android:text="WAITING LIST"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_waiting_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/name_list"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirm_btn"
+            style="@style/Widget.Main.BottomButton"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:text="완료하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
