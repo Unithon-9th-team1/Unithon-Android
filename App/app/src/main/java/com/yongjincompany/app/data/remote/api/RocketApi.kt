@@ -2,10 +2,7 @@ package com.yongjincompany.app.data.remote.api
 
 import com.yongjincompany.app.data.remote.request.rocket.ReservationRocketRequest
 import com.yongjincompany.app.data.remote.request.rocket.RideRocketRequest
-import com.yongjincompany.app.data.remote.response.rocket.FetchRocketDriverResponse
-import com.yongjincompany.app.data.remote.response.rocket.FetchRocketListResponse
-import com.yongjincompany.app.data.remote.response.rocket.ReservationRocketResponse
-import com.yongjincompany.app.data.remote.response.rocket.RideRocketResponse
+import com.yongjincompany.app.data.remote.response.rocket.*
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -29,4 +26,9 @@ interface RocketApi {
     suspend fun fetchRocketDriver(
         @Path("rocketId") rocketId: Long,
     ): Response<FetchRocketDriverResponse>
+
+    @PATCH("rocket/{rocketId}")
+    suspend fun startRocket(
+        @Path("rocketId") rocketId: Long
+    ): Response<StartRocketResponse>
 }
