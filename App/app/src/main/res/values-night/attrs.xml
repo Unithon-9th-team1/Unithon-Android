@@ -3,6 +3,8 @@
     <declare-styleable name="Button">
         <attr name="first_text" format="reference|string" />
         <attr name="second_text" format="reference|string" />
+        <attr name="custom_background" format="reference|color" />
+        <attr name="custom_color_text" format="reference|color" />
     </declare-styleable>
     
 </resources>
