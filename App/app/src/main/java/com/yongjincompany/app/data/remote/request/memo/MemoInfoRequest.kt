@@ -1,6 +1,6 @@
 package com.yongjincompany.app.data.remote.request.memo
 
-data class memoInfoRequest(
+data class MemoInfoRequest(
     val photo: String,
     val dto: dataer,
 ) {
