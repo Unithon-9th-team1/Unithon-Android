@@ -1,6 +1,6 @@
 package com.yongjincompany.app
 
-import android.os.Bundle
+import android.content.Intent
 import com.semicolon.walkhub.ui.base.BaseActivity
 import com.yongjincompany.app.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -9,8 +9,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(
     R.layout.activity_main
 ) {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun initClickListener() {
+        binding.cvReservation.setOnClickListener {
+            val intent = Intent(this@MainActivity , RecruitActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     override fun initView() {
