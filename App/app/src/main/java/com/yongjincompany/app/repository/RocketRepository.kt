@@ -5,10 +5,7 @@ import com.yongjincompany.app.data.remote.request.memo.MemoInfoRequest
 import com.yongjincompany.app.data.remote.request.rocket.ReservationRocketRequest
 import com.yongjincompany.app.data.remote.request.rocket.RideRocketRequest
 import com.yongjincompany.app.data.remote.response.memo.CreateMemoResponse
-import com.yongjincompany.app.data.remote.response.rocket.FetchRocketDriverResponse
-import com.yongjincompany.app.data.remote.response.rocket.FetchRocketListResponse
-import com.yongjincompany.app.data.remote.response.rocket.ReservationRocketResponse
-import com.yongjincompany.app.data.remote.response.rocket.RideRocketResponse
+import com.yongjincompany.app.data.remote.response.rocket.*
 import retrofit2.Response
 
 class RocketRepository {
@@ -26,5 +23,9 @@ class RocketRepository {
 
     suspend fun fetchRocketRider(rocketId: Long): Response<FetchRocketDriverResponse> {
         return RetrofitBuilder.rocketApi.fetchRocketDriver(rocketId)
+    }
+
+    suspend fun startRocket(rocketId: Long): Response<StartRocketResponse> {
+        return RetrofitBuilder.rocketApi.startRocket(rocketId)
     }
 }
