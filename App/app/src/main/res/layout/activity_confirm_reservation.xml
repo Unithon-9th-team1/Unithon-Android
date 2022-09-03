@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/noto_sans_kr_regular"
-            android:text="지금 탑승을 완료하시면 달나라 여행을 최소할 수 없습니다."
+            android:text="* 지금 탑승을 완료하시면 달나라 여행을 최소할 수 없습니다."
             android:textColor="#80FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
