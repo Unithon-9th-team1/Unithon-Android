@@ -22,7 +22,6 @@ class MessageFragment : BaseDialogFragment<FragmentMessageBinding>(R.layout.frag
 
     override fun setOkClickListener() {
         binding.btnOk.setOnClickListener {
-            
         }
     }
 }

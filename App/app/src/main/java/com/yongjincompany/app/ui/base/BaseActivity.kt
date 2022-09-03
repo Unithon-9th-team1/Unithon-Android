@@ -18,7 +18,7 @@ abstract class BaseActivity<B : ViewDataBinding>(
 
         binding = DataBindingUtil.setContentView(this, layoutId)
         binding.lifecycleOwner = this
-
+        initClickListener()
         initView()
     }
 
@@ -31,4 +31,5 @@ abstract class BaseActivity<B : ViewDataBinding>(
     }
 
     abstract fun initView()
+    open fun initClickListener() {}
 }
