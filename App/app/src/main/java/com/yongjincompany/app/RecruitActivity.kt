@@ -1,11 +1,23 @@
 package com.yongjincompany.app
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import android.animation.ObjectAnimator
+import android.view.View
+import android.view.animation.Animation
+import com.semicolon.walkhub.ui.base.BaseActivity
+import com.yongjincompany.app.databinding.ActivityRecruitBinding
 
-class RecruitActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recruit)
+class RecruitActivity : BaseActivity<ActivityRecruitBinding>(
+    R.layout.activity_recruit
+) {
+    override fun initView() {
+        ObjectAnimator.ofFloat(binding.ivMoon, View.ROTATION,   360f)
+            .apply {
+                repeatCount = Animation.INFINITE
+                start()
+            }
+    }
+
+    override fun initClickListener() {
+        super.initClickListener()
     }
 }
