@@ -39,4 +39,9 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="Widget.loading.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_8B8B8B</item>
+</style>
 </resources>
