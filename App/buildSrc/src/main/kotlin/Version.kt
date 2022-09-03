@@ -76,4 +76,8 @@ object Version {
     object CircleImageView {
         const val circleImage = "3.1.0"
     }
+
+    object TedImagePicker {
+        const val tedImagePicker = "1.2.8"
+    }
 }

@@ -97,4 +97,8 @@ object Dependency {
     object Socket {
         const val socketIo = "io.socket:socket.io-client:${Version.Socket.socket}"
     }
+
+    object TedImagePicker {
+        const val tedImagePicker = "io.github.ParkSangGwon:tedimagepicker:${Version.TedImagePicker.tedImagePicker}"
+    }
 }

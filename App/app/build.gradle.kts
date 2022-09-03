@@ -89,6 +89,8 @@ dependencies {
     implementation(Dependency.Glide.glideCore)
     annotationProcessor(Dependency.Glide.glideCompiler)
 
+    implementation(Dependency.TedImagePicker.tedImagePicker)
+
     implementation(Dependency.Socket.socketIo) {
         exclude(group = "org.json", module = "json")
     }
