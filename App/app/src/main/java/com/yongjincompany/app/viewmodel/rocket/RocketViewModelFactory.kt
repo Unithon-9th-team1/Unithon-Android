@@ -2,6 +2,7 @@ package com.yongjincompany.app.viewmodel.rocket
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.yongjincompany.app.repository.RocketRepository
 
 
 class RocketViewModelFactory(private val rocketRepository: RocketRepository) : ViewModelProvider.Factory {
@@ -9,3 +10,4 @@ class RocketViewModelFactory(private val rocketRepository: RocketRepository) : V
         return RocketViewModel(rocketRepository) as T
     }
 }
+
