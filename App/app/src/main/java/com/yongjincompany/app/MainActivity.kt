@@ -21,9 +21,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(
     }
 
     override fun initView() {
-        binding.btn.setOnClickListener {
-            val intent = Intent(context, ReservationActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 }
