@@ -10,7 +10,7 @@ object Version {
     }
 
     object GradlePlugin {
-        const val gradle = "7.0.4"
+        const val gradle = "7.2.2"
         const val kotlin = "1.6.10"
         const val service = "4.3.10"
     }
@@ -30,7 +30,7 @@ object Version {
     }
 
     object DI {
-        const val hilt = "2.38.1"
+        const val hilt = "2.43.2"
     }
 
     object Network {
