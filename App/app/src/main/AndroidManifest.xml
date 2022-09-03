@@ -37,16 +37,17 @@
             android:name=".MakeRocketActivity"
             android:exported="true"
             android:label="@string/title_activity_space"
-            android:theme="@style/Theme.App.NoActionBar" />
+            android:theme="@style/Theme.App.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".view.IntroActivity"
             android:exported="true"
             android:theme="@style/Theme.App.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SpaceActivity"
