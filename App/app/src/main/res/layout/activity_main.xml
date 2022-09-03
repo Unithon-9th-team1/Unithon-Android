@@ -6,9 +6,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
         android:background="@color/dark_gray"
-        >
+        tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/tv_rocket"
@@ -28,9 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="69dp"
             android:layout_marginEnd="16dp"
-            android:textColor="@color/white"
             android:fontFamily="@font/proto_mono_light"
             android:text="UNIT U-009"
+            android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,9 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:text="이야기"
+            android:textColor="@color/white"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_rocket" />
@@ -76,10 +75,8 @@
             app:first_text="예약하기"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.509"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_story_name"
-            app:layout_constraintVertical_bias="0.33"
             app:second_text="ROCAET TICKET"></com.yongjincompany.app.view.CustomButton>
 
         <com.yongjincompany.app.view.CustomButton
@@ -92,7 +89,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cv_reservation"
-            app:layout_constraintVertical_bias="0.0"
             app:second_text="BOARDING PASS"></com.yongjincompany.app.view.CustomButton>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
