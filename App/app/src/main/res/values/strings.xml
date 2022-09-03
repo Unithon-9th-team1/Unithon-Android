@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="next">다음</string>
+    <string name="reservation">예약하기</string>
+    <string name="rocket">ROCKET</string>
+    <string name="name">NAME</string>
 </resources>
