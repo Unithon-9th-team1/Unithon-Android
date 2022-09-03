@@ -6,7 +6,6 @@ import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import com.gun0912.tedpermission.provider.TedPermissionProvider.context
 import com.semicolon.walkhub.ui.base.BaseActivity
-import com.yongjincompany.app.data.remote.request.rocket.ReservationRocketRequest
 import com.yongjincompany.app.databinding.ActivityMakeRocketBinding
 import com.yongjincompany.app.repository.RocketRepository
 import com.yongjincompany.app.viewmodel.rocket.RocketViewModel
