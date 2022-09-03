@@ -1,6 +1,7 @@
 package com.yongjincompany.app
 
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.view.View
 import android.view.animation.Animation
 import com.semicolon.walkhub.ui.base.BaseActivity
@@ -19,6 +20,10 @@ class RecruitActivity : BaseActivity<ActivityRecruitBinding>(
     }
 
     override fun initClickListener() {
-        super.initClickListener()
+     binding.tcRecruit.setOnClickListener {
+         val intent = Intent(this@RecruitActivity , MakeRocketActivity::class.java)
+         startActivity(intent)
+         finish()
+     }
     }
 }

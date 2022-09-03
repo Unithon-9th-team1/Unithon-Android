@@ -6,11 +6,11 @@
     </style>
 
     <style name="Widget.Main.BottomButton" parent="Widget.AppCompat.Button">
-        <item name="android:background">"@drawable/button"</item>
-        <item name="android:fontFamily">"@font/noto_sans_kr_medium"</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
         <item name="android:textSize">18sp</item>
         <item name="android:text">"다음"</item>
-        <item name="android:textColor">"@color/white"</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Widget.Main.EditText" parent="Widget.AppCompat.EditText">
