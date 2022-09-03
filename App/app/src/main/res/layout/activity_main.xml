@@ -6,16 +6,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:background="@color/dark_gray"
+        >
 
         <TextView
             android:id="@+id/tv_rocket"
             style="@style/Widget.Primary.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ROCKET"
-            android:layout_marginTop="66dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="66dp"
+            android:text="ROCKET"
             android:textColor="@color/main_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +26,10 @@
             android:id="@+id/tv_unit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UNIT U-009"
             android:layout_marginTop="69dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/proto_mono_light"
+            android:text="UNIT U-009"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,11 +38,11 @@
             android:id="@+id/tv_story_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="이야기"
-            android:fontFamily="@font/noto_sans_kr_regular"
-            android:textSize="14sp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="이야기"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_rocket" />
 
@@ -48,11 +50,11 @@
             android:id="@+id/iv_moon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="173dp"
+            android:layout_marginBottom="343.33dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="173dp"
-            android:layout_marginBottom="343.33dp"
             app:srcCompat="@drawable/moon" />
 
         <ImageView
@@ -64,8 +66,34 @@
             app:layout_constraintTop_toTopOf="@+id/iv_moon"
             app:srcCompat="@drawable/moon2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.yongjincompany.app.view.CustomButton
+            android:id="@+id/cv_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="222dp"
+            app:first_text="예약하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_story_name"
+            app:layout_constraintVertical_bias="0.33"
+            app:second_text="ROCAET TICKET"></com.yongjincompany.app.view.CustomButton>
 
+        <com.yongjincompany.app.view.CustomButton
+            android:id="@+id/cv_ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:first_text="탑승하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_reservation"
+            app:layout_constraintVertical_bias="0.0"
+            app:second_text="BOARDING PASS"></com.yongjincompany.app.view.CustomButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </layout>
