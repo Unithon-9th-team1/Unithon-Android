@@ -41,17 +41,17 @@ class RocketViewModel(private val rocketRepository: RocketRepository) : ViewMode
         }
     }
 
-    fun fetchRocketRider(rocketId: Long) {
+    fun fetchRocketRider(rocketId: String) {
         viewModelScope.launch {
             val response = rocketRepository.fetchRocketRider(rocketId)
             fetchRocketDriverLiveData.value = response
         }
     }
 
-    fun startRocket(rocketId: Long) {
+    fun startRocket(rocketId: String) {
         viewModelScope.launch {
             val response = rocketRepository.startRocket(rocketId)
             startRocketLiveData.value = response
         }
     }
-}}
+}

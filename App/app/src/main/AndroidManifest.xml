@@ -5,7 +5,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+\
     <application
+        android:usesCleartextTraffic="true"
         android:name=".di.AppApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -53,7 +55,8 @@
             android:name=".SpaceActivity"
             android:exported="true"
             android:label="@string/title_activity_space"
-            android:theme="@style/Theme.App.NoActionBar" />
+            android:theme="@style/Theme.App.NoActionBar">
+        </activity>
         <activity
             android:name=".RideActivity"
             android:exported="false">

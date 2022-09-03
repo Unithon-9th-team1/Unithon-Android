@@ -52,7 +52,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/et_code"
+            android:id="@+id/et_rocket"
             style="@style/Widget.Main.EditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

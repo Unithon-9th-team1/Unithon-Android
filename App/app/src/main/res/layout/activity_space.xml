@@ -8,19 +8,6 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/iv_moon_shadow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="30dp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_moon2"
-            app:layout_constraintEnd_toEndOf="@+id/iv_moon2"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/iv_moon2"
-            app:layout_constraintTop_toTopOf="@+id/iv_moon2"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/fullmoon" />
-
-        <ImageView
             android:id="@+id/iv_moon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,9 +34,8 @@
             android:layout_marginTop="216dp"
             android:elevation="20dp"
             android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="@+id/iv_moon_shadow2"
-            app:layout_constraintHorizontal_bias="0.317"
-            app:layout_constraintStart_toStartOf="@+id/iv_moon_shadow2"
+            app:layout_constraintEnd_toEndOf="@+id/iv_moon2"
+            app:layout_constraintStart_toStartOf="@+id/iv_moon2"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/nuguri" />
         <TextView

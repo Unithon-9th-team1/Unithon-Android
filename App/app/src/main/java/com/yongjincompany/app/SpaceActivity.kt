@@ -17,6 +17,9 @@ class SpaceActivity : BaseActivity<ActivitySpaceBinding>(
     }
 
     override fun initClickListener() {
+
+
+
         binding.ivMoon2.setOnClickListener {
             if (binding.ivNuguri.visibility == View.INVISIBLE) {
                 with(AnimatorSet()) {

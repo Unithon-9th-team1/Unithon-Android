@@ -24,11 +24,11 @@ interface RocketApi {
 
     @GET("rocket/{rocketId}")
     suspend fun fetchRocketDriver(
-        @Path("rocketId") rocketId: Long,
+        @Path("rocketId") rocketId: String,
     ): Response<FetchRocketDriverResponse>
 
     @PATCH("rocket/{rocketId}")
     suspend fun startRocket(
-        @Path("rocketId") rocketId: Long
+        @Path("rocketId") rocketId: String
     ): Response<StartRocketResponse>
 }
