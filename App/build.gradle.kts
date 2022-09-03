@@ -6,7 +6,6 @@ buildscript {
 
     dependencies {
         classpath(Dependency.GradlePlugin.android)
-        classpath(Dependency.GradlePlugin.kotlin)
         classpath(Dependency.GradlePlugin.hilt)
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
     }
