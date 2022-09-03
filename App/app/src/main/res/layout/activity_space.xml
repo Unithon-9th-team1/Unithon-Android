@@ -66,38 +66,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_date"
+            android:id="@+id/tv_late_date"
+            style="@style/Widget.loading.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="3일 남음"
+            android:textColor="@color/color_8B8B8B"
             android:layout_marginTop="4dp"
-            android:fontFamily="@font/noto_sans_kr_medium"
-            android:text="2022 .09.14"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/tv_rocket_name"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_rocket_name" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ㅣ"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_date"
-            app:layout_constraintStart_toEndOf="@+id/tv_date"
-            app:layout_constraintTop_toTopOf="@+id/tv_date" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
+            style="@style/Widget.loading.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_sans_kr_medium"
-            android:text="D - 03"
+            android:text="우주여행이 시작합니다.\n항해자들의 메세지를 확인할 수 있어요."
             android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView12"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
-            app:layout_constraintTop_toTopOf="@+id/textView12" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

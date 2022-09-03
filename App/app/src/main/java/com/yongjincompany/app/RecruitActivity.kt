@@ -10,7 +10,7 @@ class RecruitActivity : BaseActivity<ActivityRecruitBinding>(
     R.layout.activity_recruit
 ) {
     override fun initView() {
-        ObjectAnimator.ofFloat(binding.ivMoon, View.ROTATION,   360f)
+        ObjectAnimator.ofFloat(binding.ivMoon, View.ROTATION,   900f)
             .apply {
                 repeatCount = Animation.INFINITE
                 start()
