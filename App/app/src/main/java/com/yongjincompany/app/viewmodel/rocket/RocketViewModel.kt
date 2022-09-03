@@ -11,6 +11,9 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 
 class RocketViewModel(private val rocketRepository: RocketRepository) : ViewModel() {
+    var fetchRocketListLiveData: MutableLiveData<Response<FetchRocketListResponse>> = MutableLiveData()
+    var reservationRocketLiveData: MutableLiveData<Response<ReservationRocketResponse>> = MutableLiveData()
+class RocketViewModel(private val rocketRepository: RocketRepository) : ViewModel() {
     var fetchRocketListLiveData: MutableLiveData<Response<FetchRocketListResponse>> =
         MutableLiveData()
     var reservationRocketLiveData: MutableLiveData<Response<ReservationRocketResponse>> =
@@ -54,4 +57,4 @@ class RocketViewModel(private val rocketRepository: RocketRepository) : ViewMode
             startRocketLiveData.value = response
         }
     }
-}
+}}

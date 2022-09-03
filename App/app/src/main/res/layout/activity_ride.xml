@@ -71,7 +71,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_code" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn"
+            android:id="@+id/btn_next"
             style="@style/Widget.Main.BottomButton"
             android:layout_width="0dp"
             android:layout_height="82dp"

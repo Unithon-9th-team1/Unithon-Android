@@ -5,7 +5,9 @@ import com.yongjincompany.app.data.remote.request.memo.MemoInfoRequest
 import com.yongjincompany.app.data.remote.request.rocket.ReservationRocketRequest
 import com.yongjincompany.app.data.remote.request.rocket.RideRocketRequest
 import com.yongjincompany.app.data.remote.response.memo.CreateMemoResponse
-import com.yongjincompany.app.data.remote.response.rocket.*
+import com.yongjincompany.app.data.remote.response.rocket.FetchRocketListResponse
+import com.yongjincompany.app.data.remote.response.rocket.ReservationRocketResponse
+import com.yongjincompany.app.data.remote.response.rocket.RideRocketResponse
 import retrofit2.Response
 
 class RocketRepository {

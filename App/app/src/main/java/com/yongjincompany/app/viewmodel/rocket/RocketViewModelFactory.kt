@@ -10,4 +10,3 @@ class RocketViewModelFactory(private val rocketRepository: RocketRepository) : V
         return RocketViewModel(rocketRepository) as T
     }
 }
-
